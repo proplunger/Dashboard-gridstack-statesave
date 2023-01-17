@@ -1,0 +1,45 @@
+{
+  "name": "jakl_coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "postcss src/input.css -o public/css/style.css --watch",
+    "build": "postcss src/input.css -o public/css/style.css --minify",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proplunger"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proplunger"
+  },
+  "homepage": "https://github.com/proplunger",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "express-session": "^1.17.2",
+    "gridstack": "^5.0.0",
+    "mysql2": "^2.3.3",
+    "postcss-cli": "^9.1.0",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.0",
+    "autoprefixer": "^10.4.4",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.0",
+    "tailwindcss": "^3.0.23"
+  }
+}

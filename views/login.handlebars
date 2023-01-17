@@ -1,0 +1,62 @@
+<div class='h-full grid grid-cols-12'>
+    <!-- First form column -->
+        <div class="col-span-12 md:col-span-4 text-white font-sans font-bold bg-black md:min-h-screen pl-7">
+            <div class="grid grid-rows-6 grid-flow-col min-h-screen items-center justify-items-start">
+                <div class="row-span-4 row-start-2 text-3xl text-white">
+                             Do you want to build a page, without being a coding genius?    
+                             <form id="login-form" action="#" method="POST">
+                <input type="hidden" name="remember" value="true" />
+
+                    <div class="pt-10 pr-20">                        
+                        <label class="text-sm font-sans font-medium uppercase" for="email">
+                            Email
+                        </label>
+                        <input 
+                            id="login-email"
+                            type="email" 
+                            name="email" 
+                            placeholder="Write your email" 
+                            autocomplete="email" 
+                            required class="mt-2 w-full bg-white py-3 px-5 border hover: border-gray-500 shadow text-black font-sans"/>                            
+                    </div>
+
+                    <div class="pt-6 pr-20">
+                        <label class="text-sm font-sans font-medium uppercase" for="password">
+                            Password
+                        </label>
+                        <input 
+                            id="login-password"
+                            type="password" 
+                            name="password" 
+                            placeholder="Write your password" 
+                            autocomplete="password"
+                            required class="mt-2 w-full bg-white py-3 px-5 border hover: border-gray-500 shadow text-black font-sans"/>
+                    </div>
+
+                    <div class="text-sm font-sans font-medium w-full pr-20 pt-8">
+                        <button type="submit" id="login-btn"
+                        class="w-full py-3 font-medium tracking-widest uppercase shadow-lg text-white bg-red-500 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                        type="button">
+                        Log In
+                    </button>
+                    </div>
+                </div>
+                </form>
+            </div>         
+        </div>
+        
+        <!-- Second column image -->
+        <div class="banner col-span-12 md:col-span-8 text-white font-sans font-bold">
+        </div>    
+</div>
+
+<style>
+    .banner {
+        background: url( '/assets/backgroundimg.jpg' );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right ;        
+    }
+</style>
+
+<script src="./js/login.js"></script>

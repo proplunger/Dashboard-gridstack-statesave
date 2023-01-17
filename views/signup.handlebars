@@ -1,0 +1,34 @@
+  <div class="grid place-items-center pt-20">
+  <div class="w-11/12 bg-clear sm:w-8/12 md:w-1/2 lg:w-5/12 rounded-sm">  
+    <form class="mt-6 bg-white border border-red-500 shadow-2xl rounded-sm px-10 pt-8 pb-12 mb-5" id="signup-form">
+      <h1 class="text-xl font-semibold pb-10">Hello there 👋, <span class="font-normal">please fill in your information to continue</span></h1>
+      <div class="flex justify-between gap-3">
+        <span class="w-1/2">
+          <label for="signup-firstname" class="block text-xs font-semibold text-gray-600 uppercase">Firstname</label>
+          <input id="signup-firstname" type="text" name="firstname" placeholder="John" autocomplete="given-name" class="mt-2 shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+        </span>
+        
+        <span class="w-1/2">
+        <label for="signup-lastname" class="block text-xs font-semibold text-gray-600 uppercase">Lastname</label>
+        <input id="signup-lastname" type="text" name="lastname" placeholder="Doe" autocomplete="family-name" class="mt-2 shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+        </span>
+      </div>
+      
+      <label for="signup-email" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">E-mail</label>
+      <input id="signup-email" type="email" name="email" placeholder="john.doe@company.com" autocomplete="email" class="mt-2 shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+      
+      <label for="signup-password" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Password</label>
+      <input id="signup-password" type="password" name="password" placeholder="********" autocomplete="new-password" class="mt-2 shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+{{!--       
+      <label for="password-confirm" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Confirm password</label>
+      <input id="password-confirm" type="password" name="password-confirm" placeholder="********" autocomplete="new-password" class="mt-2 shadow appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+       --}}
+      <button type="submit" id="signup-btn" class="w-full py-3 mt-6 font-medium tracking-widest uppercase shadow-lg text-white bg-red-500 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2">
+        Sign up
+      </button>
+    </form>
+  </div>
+  {{!-- </div> --}}
+
+<script src="./js/signup.js"></script>
+
