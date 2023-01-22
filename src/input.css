@@ -26,3 +26,196 @@
 .display-only {
   @apply cursor-default;
 }
+
+/* Add styling for the grid */
+.grid-stack {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-stack-item-content {
+  background-color: white;
+  border: 1px solid #DDD;
+  padding: 10px;
+}
+
+/* Add styling for the add widget button */
+#add-widget {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#add-widget:hover {
+  background-color: darkred;
+}
+
+/* Add styling for the trash button */
+.trash {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  float: right;
+}
+
+.trash:hover {
+  background-color: darkred;
+}
+
+/* Speedometer section */
+#speedometer {
+  width: 100%;
+  height: 100%;
+}
+
+/* Turn On/Off button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: red;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px red;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Speedometer section */
+/* Speedometer section */
+.speedometer-gauge {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid red;
+  margin: 0 auto;
+}
+
+.speedometer-gauge:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+  transform: rotate(135deg);
+}
+
+.speedometer-needle {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 0;
+  height: 0;
+  transform-origin: center;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid red;
+  transform: rotate(calc(0deg + (3.6 * var(--speed))));
+  border-radius: 20px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+/* Turn On/Off button */
+.on-off-button {
+  width: 80px;
+  height: 40px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.on-off-button:before {
+  content: "OFF";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+}
+
+.on-off-button.on:before {
+  content: "ON";
+  background: red;
+}
+
+.on-off-button:after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: gray;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+
+.on-off-button.on:after {
+  left: calc(100% - 36px);
+  background: red;
+}

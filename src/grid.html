@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="input.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <script src="gridstack.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <button id="add-widget">Add Widget</button>
+    <div class="grid-stack">
+        <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content">
+                <h2>Graph 1</h2>
+                <canvas id="chart1"></canvas>
+                <button class="trash">Delete</button>
+            </div>
+        </div>
+        <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content">
+                <h2>Graph 2</h2>
+                <canvas id="chart2"></canvas>
+                <button class="trash">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+        <div class="grid-stack-item-content">
+            <h2>Speedometer</h2>
+            <div class="speedometer-gauge">
+                <div class="speedometer-needle"></div>
+            </div>
+            <button class="trash">Delete</button>
+        </div>
+    </div>
+
+    <div class="grid-stack-item" data-gs-x="12" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+        <div class="grid-stack-item-content">
+            <h2>Turn On/Off</h2>
+            <div class="on-off-button"></div>
+        </div>
+    </div>
+
+
+
+    <script src="gridstack.js"></script>
+</body>
+
+</html>
